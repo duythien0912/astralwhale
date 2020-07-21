@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🌍Astral Whale 🐋</title>
+
+    <link rel="stylesheet" href="{% static "frontend/assets/vendors/flag-icon-css/css/flag-icon.min.css" %}">
+    <link rel="stylesheet" href="{% static "frontend/assets/vendors/font-awesome/css/all.min.css" %}">
+    <link rel="stylesheet" href="{% static "frontend/assets/vendors/aos/aos.css" %}">
+    <link rel="stylesheet" href="{% static "frontend/assets/css/style.css" %}">
+</head>
+<body>
+<div id="app">
+    <!-- React will load here -->
+</div>
+</body>
+
+<script src="{% static "frontend/main.js" %}"></script>
+<script src="{% static "frontend/assets/vendors/jquery/jquery.min.js" %}"></script>
+<script src="{% static "frontend/assets/js/loader.js" %}"></script>
+
+<script src="{% static "frontend/assets/vendors/popper.js/popper.min.js" %}"></script>
+<script src="{% static "frontend/assets/vendors/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+<script src="{% static "frontend/assets/vendors/aos/aos.js" %}"></script>
+<script src="{% static "frontend/assets/js/main.js" %}"></script>
+
+
+<script>
+    AOS.init({
+        duration: 2000
+    });
+</script>
+</html>
