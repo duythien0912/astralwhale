@@ -35,16 +35,7 @@ class App extends Component {
     render() {
         return (
             <>
-                {/*thien*/}
-                {/*<ul>*/}
-                {/*    {this.state.data.map(contact => {*/}
-                {/*        return (*/}
-                {/*            <li key={contact.id}>*/}
-                {/*                {contact.name} - {contact.email}*/}
-                {/*            </li>*/}
-                {/*        );*/}
-                {/*    })}*/}
-                {/*</ul>*/}
+                {/*<div className="edica-loader"/>*/}
                 <HomePage/>
             </>
         );
