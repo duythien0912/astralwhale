@@ -390,3 +390,7 @@ fabric.properties
 # CUSTOM
 frontend/static/frontend/assets
 frontend/static/frontend/main.js
+
+bot/upload/
+
+bot/neun/interacted_users.json
