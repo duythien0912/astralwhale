@@ -35,79 +35,6 @@ function HomePage() {
 var HomeBody = () => <div>
     <Header/>
     <main>
-        <section className="edica-landing-section edica-landing-about">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6" data-aos="fade-up-right">
-                        <h4 className="edica-landing-section-subtitle-alt">ABOUT US</h4>
-                        <h2 className="edica-landing-section-title">
-                            1000+ customer using Our application.
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipng elit, sed do
-                            eiusmod tempor incididunt ut labore aliqua. Ut enim que minim
-                            veniam, quis nostrud exercitation.
-                        </p>
-                        <ul className="landing-about-list">
-                            <li>Powerful and flexible theme</li>
-                            <li>Simple, transparent pricing</li>
-                            <li>Build tools and full documention</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-6" data-aos="fade-up-left">
-                        <img
-                            src="static/frontend/assets/images/phone-copy.png"
-                            width="468px"
-                            alt="about"
-                            className="img-fluid"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section className="edica-landing-section edica-landing-clients">
-            <div className="container">
-                <h4 className="edica-landing-section-subtitle-alt">PARTNER WITH US</h4>
-                <div className="partners-wrapper">
-                    <img
-                        src="static/frontend/assets/images/Partner_1.png"
-                        alt="client logo"
-                        data-aos="flip-right"
-                        data-aos-delay={250}
-                    />
-                    <img
-                        src="static/frontend/assets/images/Partner_2.png"
-                        alt="client logo"
-                        data-aos="flip-right"
-                        data-aos-delay={500}
-                    />
-                    <img
-                        src="static/frontend/assets/images/Partner_3.png"
-                        alt="client logo"
-                        data-aos="flip-right"
-                        data-aos-delay={750}
-                    />
-                    <img
-                        src="static/frontend/assets/images/Partner_4.png"
-                        alt="client logo"
-                        data-aos="flip-right"
-                        data-aos-delay={1000}
-                    />
-                    <img
-                        src="static/frontend/assets/images/Partner_5.png"
-                        alt="client logo"
-                        data-aos="flip-right"
-                        data-aos-delay={1250}
-                    />
-                    <img
-                        src="static/frontend/assets/images/Partner_6.png"
-                        alt="client logo"
-                        data-aos="flip-right"
-                        data-aos-delay={1500}
-                    />
-                </div>
-            </div>
-        </section>
         <section className="edica-landing-section edica-landing-services">
             <div className="container">
                 <h4 className="edica-landing-section-subtitle">Service We Offer</h4>
@@ -166,6 +93,123 @@ var HomeBody = () => <div>
                             mainstream parties courtesy of his En Marche! movement. For many,
                             however, the.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="edica-landing-section edica-landing-about">
+            <div className="container">
+                <div className="row">
+
+                    <div className="col-md-6" data-aos="fade-up-right">
+                        <img
+                            src="static/frontend/assets/images/phone-copy.png"
+                            width="468px"
+                            alt="about"
+                            className="img-fluid"
+                        />
+                    </div>
+                    <div className="col-md-6" data-aos="fade-up-left">
+                        <h4 className="edica-landing-section-subtitle-alt">ABOUT US</h4>
+                        <h2 className="edica-landing-section-title">
+                            1000+ customer using Our application.
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipng elit, sed do
+                            eiusmod tempor incididunt ut labore aliqua. Ut enim que minim
+                            veniam, quis nostrud exercitation.
+                        </p>
+                        <ul className="landing-about-list">
+                            <li>Powerful and flexible theme</li>
+                            <li>Simple, transparent pricing</li>
+                            <li>Build tools and full documention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="edica-landing-section edica-landing-clients">
+            <div className="container">
+                <h4 className="edica-landing-section-subtitle-alt">PARTNER WITH US</h4>
+                <div className="partners-wrapper">
+                    <img
+                        src="static/frontend/assets/images/Partner_1.png"
+                        alt="client logo"
+                        data-aos="flip-right"
+                        data-aos-delay={250}
+                    />
+                    <img
+                        src="static/frontend/assets/images/Partner_2.png"
+                        alt="client logo"
+                        data-aos="flip-right"
+                        data-aos-delay={500}
+                    />
+                    <img
+                        src="static/frontend/assets/images/Partner_3.png"
+                        alt="client logo"
+                        data-aos="flip-right"
+                        data-aos-delay={750}
+                    />
+                    <img
+                        src="static/frontend/assets/images/Partner_4.png"
+                        alt="client logo"
+                        data-aos="flip-right"
+                        data-aos-delay={1000}
+                    />
+                    <img
+                        src="static/frontend/assets/images/Partner_5.png"
+                        alt="client logo"
+                        data-aos="flip-right"
+                        data-aos-delay={1250}
+                    />
+                    <img
+                        src="static/frontend/assets/images/Partner_6.png"
+                        alt="client logo"
+                        data-aos="flip-right"
+                        data-aos-delay={1500}
+                    />
+                </div>
+            </div>
+        </section>
+        <section className="py-5 mb-5">
+            <div className="container">
+                <h2>Choose the plan that’s right for yor business</h2>
+                <p className="text-muted mb-5">Thank you for your very professional and prompt response. I wished I had
+                    found you before </p>
+                <div className="row">
+                    <div className="col-lg-4 mb-4">
+                        <div className="card pricing-card border-warning">
+                            <div className="card-body">
+                                <h3 className="mb-1">Starter</h3>
+                                <h3 className="mb-1 text-warning">Free</h3>
+                                <p className="payment-period">Per month</p>
+                                <p className="mb-4">Thank you for your very professional and prompt response.</p>
+                                <button className="btn btn-outline-warning btn-rounded">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 mb-4">
+                        <div className="card pricing-card border-primary active">
+                            <div className="card-body">
+                                <h3>Popular</h3>
+                                <h3 className="text-primary">$23.00</h3>
+                                <p className="payment-period">Per month</p>
+                                <p className="mb-4">Thank you for your very professional and prompt response.</p>
+                                <button className="btn btn-primary btn-rounded">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 mb-4">
+                        <div className="card pricing-card border-success">
+                            <div className="card-body">
+                                <h3>Enterprise</h3>
+                                <h3 className="text-success">$40.00</h3>
+                                <p className="payment-period">Per month</p>
+                                <p className="mb-4">Thank you for your very professional and prompt response.</p>
+                                <button className="btn btn-outline-success btn-rounded">Get Started</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

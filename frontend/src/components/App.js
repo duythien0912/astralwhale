@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {render} from "react-dom";
 import HomePage from "./page/home";
+import {EarlySignUp} from "./page/early_sign_up";
+import {EarlySignUpV2} from "./page/early_sign_up_2";
 
 class App extends Component {
     constructor(props) {
@@ -36,7 +38,8 @@ class App extends Component {
         return (
             <>
                 {/*<div className="edica-loader"/>*/}
-                <HomePage/>
+                {/*<EarlySignUp/>*/}
+                <EarlySignUpV2/>
             </>
         );
     }
