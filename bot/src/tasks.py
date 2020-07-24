@@ -62,7 +62,7 @@ def like_tiktok(d, storage):
     if follow_chance > (100 - 30):
         print("like" + str(follow_chance))
         d(className="android.widget.FrameLayout",
-            resourceId="com.zhiliaoapp.musically:id/aar").click()
+          resourceId="com.zhiliaoapp.musically:id/aar").click()
         # after_like = int(
         #     d(resourceId="com.zhiliaoapp.musically:id/aas").get_text())
 
@@ -124,26 +124,33 @@ def go_user_profile(d, storage):
         for i in range(0, 14):
             if d(text="Bạn đang follow quá nhanh.").exists:
                 crash_tiktok(d)
-            if d.xpath('//*/android.widget.RelativeLayout[' + str(i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').exists:
-                if d.xpath('//*/android.widget.RelativeLayout[' + str(i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').get_text() == 'Follow':
+            if d.xpath('//*/android.widget.RelativeLayout[' + str(
+                    i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').exists:
+                if d.xpath('//*/android.widget.RelativeLayout[' + str(
+                        i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').get_text() == 'Follow':
                     d.xpath('//*/android.widget.RelativeLayout[' + str(
                         i) + ']/android.widget.RelativeLayout[1]').click()
                     isEnd = 1
                     random_sleep()
-                    if d.xpath('//*/android.widget.RelativeLayout[' + str(i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').get_text() == 'Follow':
+                    if d.xpath('//*/android.widget.RelativeLayout[' + str(
+                            i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').get_text() == 'Follow':
                         random_sleep()
-                        if d.xpath('//*/android.widget.RelativeLayout[' + str(i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').get_text() == 'Follow':
+                        if d.xpath('//*/android.widget.RelativeLayout[' + str(
+                                i) + ']/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').get_text() == 'Follow':
                             print("Bạn đang follow quá nhanh")
                             crash_tiktok(d)
                             break
-                    if(d.xpath('//*/android.widget.RelativeLayout[' + str(i) + ']/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView').exists):
+                    if (d.xpath('//*/android.widget.RelativeLayout[' + str(
+                            i) + ']/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView').exists):
                         now = datetime.datetime.now()
                         print(now.strftime("%Y-%m-%d %H:%M:%S") +
                               " follow: " + str(i))
                         print(d.xpath('//*/android.widget.RelativeLayout[' + str(
                             i) + ']/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView').get_text())
                         storage.add_interacted_user(
-                            d.xpath('//*/android.widget.RelativeLayout[' + str(i) + ']/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView').get_text(), followed=True)
+                            d.xpath('//*/android.widget.RelativeLayout[' + str(
+                                i) + ']/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView').get_text(),
+                            followed=True)
                     random_sleep()
         # random_sleep()
 
@@ -165,3 +172,9 @@ def go_user_profile(d, storage):
     # sleep(1)
     # d(text='Follower').click()
     # go_user_profile(d, storage)
+
+
+def upload_video(d):
+    print('==> Start upload video')
+    res = d.push('http://127.0.0.1:8000/media/files/10.mp4', "/sdcard/Pictures/" + '10.mp4')
+    print(res)

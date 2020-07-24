@@ -35,16 +35,25 @@ def main():
         discover_tiktok()
         d = init_devicd()
         # d.debug = True
-        storage = Storage("neun")
-        stop_tiktok(d)
-        open_tiktok(d)
-        sess = d.session("com.zhiliaoapp.musically", attach=True)
-        go_home_tiktok(sess)
-        go_user_profile(sess, storage)
+
+        # Task Upload
+        upload_video(d)
+        #
+        # storage = Storage("neun")
+        # stop_tiktok(d)
+        # open_tiktok(d)
+        # sess = d.session("com.zhiliaoapp.musically", attach=True)
+        # go_home_tiktok(sess)
+
+        # Task Follow
+        # go_user_profile(sess, storage)
+
+        # Task Like
         # while True:
         #     like_tiktok(sess, storage)
-        stop_tiktok(d)
-        sess.close()
+
+        # stop_tiktok(d)
+        # sess.close()
     except Exception as e:
         print(e)
         crash_tiktok(d)
