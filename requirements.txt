@@ -13,7 +13,7 @@ deprecation==2.1.0
 Django==3.0.8
 django-db-prefix==1.0
 django-table-prefix==0.0.5
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 facebook-wda==1.0.5
 idna==2.10
 logzero==1.5.0
