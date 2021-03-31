@@ -17,7 +17,7 @@ djangorestframework==3.11.0
 facebook-wda==1.0.5
 idna==2.10
 logzero==1.5.0
-lxml==4.5.2
+lxml==4.6.3
 packaging==20.4
 Pillow==7.2.0
 progress==1.5
