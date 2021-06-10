@@ -10,7 +10,7 @@ coverage==5.2
 decorator==4.4.2
 Deprecated==1.2.10
 deprecation==2.1.0
-Django==3.0.8
+Django==3.1.12
 django-db-prefix==1.0
 django-table-prefix==0.0.5
 djangorestframework==3.11.0
